@@ -14,7 +14,7 @@ const Dashboard = () => {
 
   // Supabase Configuration - UPDATE THESE
   const SUPABASE_URL = 'Yhttps://iwrnyrxujdroicbultgr.supabase.co';
-  const SUPABASE_ANON_KEY = 'YeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml3cm55cnh1amRyb2ljYnVsdGdyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTcwOTI2NTQsImV4cCI6MjA3MjY2ODY1NH0.t2kPob8keuW8-kxyeMbsucImDx9XneiPhi3ikQiqJGw';
+  const SUPABASE_ANON_KEY = process.env.REACT_APP_SUPABASE_ANON_KEY;
 
   // Fetch violations from Supabase
   const fetchViolations = async () => {
