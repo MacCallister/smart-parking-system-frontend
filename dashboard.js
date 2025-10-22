@@ -13,7 +13,7 @@ const Dashboard = () => {
   const [lastUpdate, setLastUpdate] = useState(new Date());
 
   // Supabase Configuration - UPDATE THESE
-  const SUPABASE_URL = 'Yhttps://iwrnyrxujdroicbultgr.supabase.co';
+  const SUPABASE_URL = process.env.REACT_APP_SUPABASE_URL;
   const SUPABASE_ANON_KEY = process.env.REACT_APP_SUPABASE_ANON_KEY;
 
   // Fetch violations from Supabase
